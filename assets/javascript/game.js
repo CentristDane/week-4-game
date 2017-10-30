@@ -3,7 +3,8 @@
   var numberOptions = [];
   var loses = 0; 
   var wins = 0; 
-  var crystalPics = ["http://www.crystalinks.com/lasercrystal250.jpg", "http://cdn.playbuzz.com/cdn/7a5d7935-6177-4be8-8b72-2a95ad2bcdfe/3b295cc9-7b5e-412f-8b1f-8547edd8e66b.jpg", "https://www.extremetech.com/wp-content/uploads/2013/07/quartz-crystal-640x353.jpg","https://www.sciencedaily.com/images/2013/11/131127131802_1_900x600.jpg" ]
+  var crystalPics = ["./assets/images/image1.jpg","./assets/images/image2.jpg","./assets/images/image3.jpg","./assets/images/image4.jpg"];
+  //"http://www.crystalinks.com/lasercrystal250.jpg", "http://cdn.playbuzz.com/cdn/7a5d7935-6177-4be8-8b72-2a95ad2bcdfe/3b295cc9-7b5e-412f-8b1f-8547edd8e66b.jpg", "https://www.extremetech.com/wp-content/uploads/2013/07/quartz-crystal-640x353.jpg","https://www.sciencedaily.com/images/2013/11/131127131802_1_900x600.jpg" ]
 
   $("#number-to-guess").text(targetNumber);
    $("#wins").text(wins);
