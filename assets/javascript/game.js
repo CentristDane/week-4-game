@@ -3,6 +3,7 @@
   var numberOptions = [];
   var loses = 0; 
   var wins = 0; 
+  var crystalPics = ["http://www.crystalinks.com/lasercrystal250.jpg", "http://cdn.playbuzz.com/cdn/7a5d7935-6177-4be8-8b72-2a95ad2bcdfe/3b295cc9-7b5e-412f-8b1f-8547edd8e66b.jpg", "https://www.extremetech.com/wp-content/uploads/2013/07/quartz-crystal-640x353.jpg","https://www.sciencedaily.com/images/2013/11/131127131802_1_900x600.jpg" ]
 
   $("#number-to-guess").text(targetNumber);
    $("#wins").text(wins);
@@ -19,7 +20,8 @@
         for (var i = 0; i < numberOptions.length; i++) {
               var imageCrystal = $("<img>");
               imageCrystal.addClass("crystal-image");
-              imageCrystal.attr("src", "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg");
+              imageCrystal.attr("src", crystalPics[i]);
+              //imageCrystal.attr("src", "http://cdn.playbuzz.com/cdn/7a5d7935-6177-4be8-8b72-2a95ad2bcdfe/3b295cc9-7b5e-412f-8b1f-8547edd8e66b.jpg");
               imageCrystal.attr("data-crystalvalue", numberOptions[i]);
               $("#crystals").append(imageCrystal);
           }
@@ -31,7 +33,7 @@
                     counter += crystalValue;
                     var score = counter;
                     $("#score").empty().html(counter);
-                    alert("New score: " + counter);
+                   
 
                       if (counter === targetNumber) {
                         alert("You win!");
